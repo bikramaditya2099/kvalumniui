@@ -1,0 +1,170 @@
+
+
+			<div role="main" class="main">
+
+				<section class="page-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Contact Us</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+				<div id="googlemaps" class="google-map"></div>
+
+				<div class="container">
+
+					<div class="row">
+						<!-- <div class="col-md-6">
+
+							<div class="alert alert-success hidden" id="contactSuccess">
+								<strong>Success!</strong> Your message has been sent to us.
+							</div>
+
+							<div class="alert alert-danger hidden" id="contactError">
+								<strong>Error!</strong> There was an error sending your message.
+							</div>
+
+							<h2 class="mb-sm mt-sm"><strong>Contact</strong> Us</h2>
+							<form id="contactForm" action="php/contact-form.php" method="POST">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-6">
+											<label>Your name *</label>
+											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+										</div>
+										<div class="col-md-6">
+											<label>Your email address *</label>
+											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<label>Subject</label>
+											<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<label>Message *</label>
+											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<input type="submit" value="Send Message" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+									</div>
+								</div>
+							</form>
+						</div> -->
+						<div class="col-md-6">
+
+							<h4 class="heading-primary mt-lg">Get in <strong>Touch</strong></h4>
+							<p>We are happy to stay connected with our Alumni members, Stay connected with us and participate in various alumni programme.</p>
+
+							<hr>
+
+							<h4 class="heading-primary">The <strong>Office</strong></h4>
+							<ul class="list list-icons list-icons-style-3 mt-xlg">
+								<li><i class="fa fa-map-marker"></i> <strong>Address:</strong> Kendriya Vidyalaya ,Puri</li>
+								<li><i class="fa fa-phone"></i> <strong>Phone:</strong> 06752 250 310</li>
+								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:kvpaa@gmail.com">kvpaa@gmail.com</a></li>
+							</ul>
+
+							<hr>
+
+							<!-- <h4 class="heading-primary">Business <strong>Hours</strong></h4>
+							<ul class="list list-icons list-dark mt-xlg">
+								<li><i class="fa fa-clock-o"></i> Monday - Friday 9am to 5pm</li>
+								<li><i class="fa fa-clock-o"></i> Saturday - 9am to 2pm</li>
+								<li><i class="fa fa-clock-o"></i> Sunday - Closed</li>
+							</ul>
+ -->
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+	
+			
+	<script>
+
+			/*
+			Map Settings
+
+				Find the Latitude and Longitude of your address:
+					- http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+
+			*/
+
+			// Map Markers
+			var mapMarkers = [{
+				address: "Kendriya Vidyalaya,Puri",
+				html: "<strong>Alumni Association </strong><br>Puri, 752002",
+				icon: {
+					image: "img/pin.png",
+					iconsize: [26, 46],
+					iconanchor: [12, 46]
+				},
+				popup: true
+			}];
+
+			// Map Initial Location
+			var initLatitude = 19.8152258;
+			var initLongitude = 85.8492001;
+
+			// Map Extended Settings
+			var mapSettings = {
+				controls: {
+					draggable: (($.browser.mobile) ? false : true),
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: true,
+					streetViewControl: true,
+					overviewMapControl: true
+				},
+				scrollwheel: false,
+				markers: mapMarkers,
+				latitude: initLatitude,
+				longitude: initLongitude,
+				zoom: 16
+			};
+
+			var map = $("#googlemaps").gMap(mapSettings);
+
+			// Map Center At
+			var mapCenterAt = function(options, e) {
+				e.preventDefault();
+				$("#googlemaps").gMap("centerAt", options);
+			}
+
+		</script>
+		
+	
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-12345678-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		 -->
+
+

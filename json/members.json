@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Ashis Bhatacharjee",
+    "image": "img/pp/ashis1.jpg",
+    "position": "President"
+  },
+  {
+    "name": "Pradeep Kumar Nayak",
+    "image": "img/pp/pradeep.jpg",
+    "position": "Vice President"
+  },
+  {
+    "name": "Debasis Kumar",
+    "image": "",
+    "position": "Secretary"
+  },
+  {
+    "name": "Swadhin Mohanty",
+    "image": "",
+    "position": "Treasurer"
+  },
+  {
+    "name": "Lagnajeet Mishra",
+    "image": "",
+    "position": "Joint Secretary"
+  }
+]

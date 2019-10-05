@@ -1,0 +1,158 @@
+
+			<div role="main" class="main">
+
+				<section class="page-header">
+					<div class="container">
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Register</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-12">
+
+							<div class="featured-boxes">
+								<div class="row">
+									
+									<div class="col-sm-offset-3 col-sm-6">
+										<div class="featured-box featured-box-primary align-left mt-xlg">
+											<div class="box-content">
+												<h4 class="heading-primary text-uppercase mb-md">Alumni Registration</h4>
+												<form name="myForm" id="frmSignUp" method="post">
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>E-mail Address*</label>
+																<input type="text" value="" class="form-control input-lg" name="email" placeholder="xyz@example.com" ng-model="email" required>
+																<span ng-show="myForm.email.$touched && myForm.email.$invalid" style="color:red">Email is required.</span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-6">
+																<label>Password*</label>
+																<input type="password" value="" class="form-control input-lg" ng-model="password" name="password" required>
+																<span ng-show="myForm.password.$touched && myForm.password.$invalid" style="color:red">Password is required.</span>
+															</div>
+															<div class="col-md-6">
+																<label>Re-enter Password*</label>
+																<input type="password" value="" class="form-control input-lg" ng-model="rpassword" name="rpassword">
+																<span ng-show="myForm.rpassword.$touched && (password != rpassword)" style="color:red">Password not matching.</span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>First Name*</label>
+																<input type="text" value="" class="form-control input-lg" placeholder="Enter your first name" name="firstName" ng-model="firstName" required>
+																<span ng-show="myForm.firstName.$touched && myForm.firstName.$invalid" style="color:red">FirstName is required.</span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Last Name*</label>
+																<input type="text" value="" class="form-control input-lg" placeholder="Enter your Last name" name="lastName" ng-model="lastName" required>
+																<span ng-show="myForm.lastName.$touched && myForm.lastName.$invalid" style="color:red">Last name is required.</span>
+															</div>
+														</div>
+													</div>
+														<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Gender</label>
+																<select class="form-control input-lg" name="gender" ng-model="gender" required><option>Male</option><option>Female</option></select>
+																<span ng-show="myForm.gender.$touched && myForm.gender.$invalid" style="color:red">Gender is required.</span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Date of Birth*</label>
+																<input type="date" value="" class="form-control input-lg" name="dob" ng-model="dob" required>
+																<span ng-show="myForm.dob.$touched && myForm.dob.$invalid" style="color:red">DOB is required.</span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Passout Year*</label>
+																<input type="Number" value="" class="form-control input-lg" name="py" ng-model="py" required>
+																<span ng-show="myForm.py.$touched && myForm.py.$invalid" style="color:red">Passout year is required.</span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Organization Name</label>
+																<input type="text" value="" class="form-control input-lg" placeholder="Currently if you are a job holder" name="org" ng-model="org">
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Designation</label>
+																<input type="text" value="" class="form-control input-lg" name="desg" ng-model="desg">
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Location*</label>
+																<input type="text" value="" class="form-control input-lg" name="loc" ng-model="loc" required>
+																<span ng-show="myForm.desg.$touched && myForm.desg.$invalid" style="color:red">Location is required.</span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Contact No*</label>
+																<input type="Number" value="" class="form-control input-lg" name="cont" ng-model="cont" required>
+																<span ng-show="myForm.cont.$touched && myForm.cont.$invalid" style="color:red">Contact is required.</span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="row">
+														<div class="form-group">
+															<div class="col-md-12">
+																<label>Address*</label>
+																<input type="text" value="" class="form-control input-lg" name="addr" ng-model="addr" required>
+																<span ng-show="myForm.addr.$touched && myForm.addr.$invalid" style="color:red">Address is required.</span>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<input type="submit" value="Register" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading..." ng-disabled="myForm.addr.$invalid || myForm.cont.$invalid || myForm.desg.$invalid || myForm.py.$invalid || myForm.dob.$invalid || myForm.gender.$invalid || myForm.lastName.$invalid || myForm.firstName.$invalid || myForm.password.$invalid ||myForm.email.$invalid" ng-click="registerNew()">
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>

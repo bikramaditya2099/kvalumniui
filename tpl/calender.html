@@ -1,0 +1,54 @@
+
+			<div role="main" class="main">
+
+				<section class="page-header">
+					<div class="container">
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Calender</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+
+					<section class="timeline" id="timeline">
+						<div class="timeline-body">
+						<div ng-repeat="item in calender">
+							<div class="timeline-date">
+								<h3 class="heading-primary">{{item.year}}</h3>
+							</div>
+
+							<article class="timeline-box {{event.appear}}" ng-repeat="event in item.events">
+								
+									
+										<span class=" thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<!-- <img src="img/projects/project.jpg" class="img-responsive" alt=""> -->
+												<h4>{{event.name}}</h4>
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">{{event.date}}</span>
+													<span class="thumb-info-type">{{event.day}}</span>
+												</span>
+												<!-- <span class="thumb-info-action">
+													<span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+												</span> -->
+											</span>
+										</span>
+									
+								
+							</article>
+							
+							</div>
+						</div>
+
+					</section>
+
+
+				</div>
+
+			</div>
+
+	

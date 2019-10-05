@@ -1,0 +1,236 @@
+
+			
+			<div>	<div class="home-intro" id="home-intro">
+					<div class="container">
+				
+						<div class="row">
+							<div class="col-md-8">
+								<p>
+									Now you can start donating funds to <em>KVPAA</em>
+																	</p>
+							</div>
+							<div class="col-md-4">
+								<div class="get-started">
+									<a href="#/donate" class="btn btn-lg btn-primary">Donate Now!</a>
+									<div class="learn-more">or <a href="index.html">Give a gift.</a></div>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+				
+				<div class="container">
+				
+					<div class="row center">
+						<div class="col-md-12">
+							<h1 class="mb-sm word-rotator-title">
+								Kendriya Vidyalaya Puri Alumni Association is <br>
+								<strong class="inverted">
+									<span class="word-rotate" data-plugin-options='{"delay": 2000, "animDelay": 300}'>
+										<span class="word-rotate-items">
+											<span>FOR YOU</span>
+											<span>BY YOU</span>
+											<span> ALWAYS WITH YOU</span>
+										</span>
+									</span>
+								</strong>
+								
+							</h1>
+							
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="home-concept">
+					<div class="container">
+				
+						<div class="row center">
+							<span class="sun"></span>
+							<span class="cloud"></span>
+							<div class="col-md-2 col-md-offset-1">
+								<div class="process-image appear-animation" data-appear-animation="bounceIn">
+									<label for="upload">
+									<img src="img/userIcon.png" alt="" ng-if="!info.image" />
+									<img src="http://ec2-54-212-201-118.us-west-2.compute.amazonaws.com:8080/AlumniProject/img/profile_pics/{{info.image}}" alt="" ng-if="info.image" />
+									<strong>{{info.firstName}}</strong>
+									<form id="ppform" action="http://ec2-54-212-201-118.us-west-2.compute.amazonaws.com:8080/AlumniProject/kvpa/user/upload/" method="post" enctype="multipart/form-data">
+									<input type="hidden" value="{{sessId}}" name="sessionId">								
+									<input type="file" id="upload" name="file"  ng-click="callme()" style="display:none"/><br>
+									<input type="button" value="Update Photo" ng-if="props" ng-click="submitForm()"/>
+									</form>
+									</label>
+								</div>
+							</div>
+							<!-- <div class="col-md-2">
+								<div class="process-image appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="200">
+									<img src="img/home-concept-item-2.png" alt="" />
+									<strong>Planning</strong>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="process-image appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="400">
+									<img src="img/home-concept-item-3.png" alt="" />
+									<strong>Build</strong>
+								</div>
+							</div> -->
+						<!-- 	<div class="col-md-4 col-md-offset-1">
+								<div class="project-image">
+									<div id="fcSlideshow" class="fc-slideshow">
+										<ul class="fc-slides">
+											<li><a href="portfolio-single-project.html"><img class="img-responsive" src="img/projects/project-home-1.jpg" alt="" /></a></li>
+											<li><a href="portfolio-single-project.html"><img class="img-responsive" src="img/projects/project-home-2.jpg" alt="" /></a></li>
+											<li><a href="portfolio-single-project.html"><img class="img-responsive" src="img/projects/project-home-3.jpg" alt="" /></a></li>
+										</ul>
+									</div>
+									<strong class="our-work">Our Work</strong>
+								</div>
+							</div> -->
+						</div>
+				
+					</div>
+				</div>
+				
+				<div class="container">
+				
+					<div class="row">
+						<hr class="tall">
+					</div>
+				
+				</div>
+				
+				<div class="container">
+				
+					<div class="row">
+						<div class="col-md-8">
+							<h2>Profile <strong>Details</strong></h2>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="fa fa-group"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="heading-primary mb-none">Date of Birth</h4>
+											<p class="tall">{{formatDate(info.dob)}}</p>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="fa fa-file"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="heading-primary mb-none">Passout Year</h4>
+											<p class="tall">{{info.passoutYear}}</p>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="fa fa-google-plus"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="heading-primary mb-none">Organization</h4>
+											<p class="tall">{{info.organization}}</p>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="fa fa-adjust"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="heading-primary mb-none">Designation</h4>
+											<p class="tall">{{info.designtion}}</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+								
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="heading-primary mb-none">Location</h4>
+											<p class="tall">{{info.location}}</p>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="fa fa-phone"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="heading-primary mb-none">Phone</h4>
+											<p class="tall">{{info.phone}}</p>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="fa fa-location-arrow"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="heading-primary mb-none">Address</h4>
+											<p class="tall">{{info.address}}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- 	<div class="col-md-4">
+							<h2>and more...</h2>
+				
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+												<i class="fa fa-usd"></i>
+												Pricing Tables
+											</a>
+										</h4>
+									</div>
+									<div id="collapseOne" class="accordion-body collapse in">
+										<div class="panel-body">
+											Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+												<i class="fa fa-comment"></i>
+												Contact Forms
+											</a>
+										</h4>
+									</div>
+									<div id="collapseTwo" class="accordion-body collapse">
+										<div class="panel-body">
+											Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+												<i class="fa fa-laptop"></i>
+												Portfolio Pages
+											</a>
+										</h4>
+									</div>
+									<div id="collapseThree" class="accordion-body collapse">
+										<div class="panel-body">
+											Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				
+				
+					
+			</div>
+
+		

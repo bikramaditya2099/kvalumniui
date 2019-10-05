@@ -1,0 +1,127 @@
+<div class="register-container full-height sm-p-t-30">
+    <div class="container-sm-height full-height">
+        <div class="row row-sm-height">
+            <div class="col-sm-12 col-sm-height col-middle">
+                <h2><b>Rain</b></h2>
+                <h3>Rain utility makes the user management more user friendly and more authentic</h3>
+                <p>
+                    <small>
+        Create a rain account. Use the application id to register a user.
+              </small>
+                </p>
+                <form id="form-register" class="p-t-15" role="form" name="register" novalidate>
+                       <div class="row">
+                        <div class="col-sm-12">
+                           <!--  <div pg-form-group class="form-group form-group-default" ng-class="{ 'has-error': register.appid.$invalid && !register.appid.$pristine }">
+                                <label>APP ID</label>
+                                <input type="text" name="appid" placeholder="Application ID" class="form-control" ng-model="user.appid" required>
+                            </div>
+                            <label class="error" for="appid" ng-show="register.appid.$invalid && !register.appid.$pristine">This field is required.</label> -->
+                            
+                            <div pg-form-group="" class="form-group form-group-default"  ng-class="{ 'has-error': register.subid.$invalid && !register.subid.$pristine }">
+                       					 <label>Subscription Type</label>
+                       					  <select name="gender" ng-model="user.subid" class="cs-select cs-skin-slide form-control" cs-select>
+                       							 <option value="1">Demo</option>
+                       							 <option value="2">Basic</option>
+                       							 <option value="3">Standard</option>
+                       							 <option value="4">Pro</option>
+                       							 <option value="5">Unlimited</option>
+                  						  </select>
+                    				</div>
+                             <label class="error" for="subid" ng-show="register.subid.$invalid && !register.subid.$pristine">This field is required.</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div pg-form-group class="form-group form-group-default" ng-class="{ 'has-error': register.fname.$invalid && !register.fname.$pristine }">
+                                <label>First Name</label>
+                                <input type="text" name="fname" placeholder="Bikram" class="form-control" ng-model="user.fname" required>
+                            </div>
+                            <label class="error" for="fname" ng-show="register.fname.$invalid && !register.fname.$pristine">This field is required.</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <div pg-form-group class="form-group form-group-default" ng-class="{ 'has-error': register.lname.$invalid && !register.lname.$pristine }">
+                                <label>Last Name</label>
+                                <input type="text" name="lname" placeholder="Aditya" class="form-control" ng-model="user.lname" required>
+                            </div>
+                            <label class="error" for="lname" ng-show="register.lname.$invalid && !register.lname.$pristine">This field is required.</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div pg-form-group class="form-group form-group-default" ng-class="{ 'has-error': register.uname.$invalid && !register.uname.$pristine }">
+                                <label>Email</label>
+                                <input type="email" name="uname" placeholder="your email id (This will be your rain user id) " class="form-control" ng-model="user.username" required>
+                            </div>
+                            <label class="error" for="uname" ng-show="register.uname.$invalid && !register.uname.$pristine">Enter a valid email.</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div pg-form-group class="form-group form-group-default" ng-class="{ 'has-error': register.pass.$invalid && !register.pass.$pristine }">
+                                <label>Password</label>
+                                <input type="password" name="pass" placeholder="Minimum of 4 Charactors" class="form-control" ng-minlength="6" ng-model="user.password" required>
+                            </div>
+                            <label class="error" for="pass" ng-show="register.pass.$invalid && !register.pass.$pristine">This field is required.</label>
+                            <label class="error" for="pass" ng-show="register.pass.$error.minlength">Password should have at least 6 characters</label>
+                        </div>
+                    </div>
+                    
+                     <div class="row">
+                        <div class="col-sm-6">
+                    				<div pg-form-group="" class="form-group form-group-default input-group"  ng-class="{ 'has-error': register.dob.$invalid && !register.dob.$pristine }">
+                       					 <label>DOB</label>
+                       					 <input type="text" name="dob" class="form-control" placeholder="Date of Birth" id="datepicker-component2" ng-model="user.dob" required ui-jq="datepicker">
+                       					 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    				</div>
+                             <label class="error" for="dob" ng-show="register.dob.$invalid && !register.dob.$pristine">This field is required.</label>
+                      </div>
+                      
+                      <div class="col-sm-6">
+                    				<div pg-form-group="" class="form-group form-group-default"  ng-class="{ 'has-error': register.gender.$invalid && !register.gender.$pristine }">
+                       					 <label>Gender</label>
+                       					  <select name="gender" ng-model="user.gender" class="cs-select cs-skin-slide form-control" cs-select>
+                       							 <option value="male">Male</option>
+                       							 <option value="female">Female</option>
+                  						  </select>
+                    				</div>
+                             <label class="error" for="gender" ng-show="register.gender.$invalid && !register.gender.$pristine">This field is required.</label>
+                      </div>
+                    </div>
+                    <div class="row m-t-10">
+                        <div class="col-md-6">
+                            <p>I agree to the <a href="" class="text-info small">Pages Terms</a> and <a href="" class="text-info small">Privacy</a>.</p>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <a href="" data-target="#helpModal" data-toggle="modal" class="text-info small">Help? Contact Support</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-cons m-t-10" type="submit" ng-disabled="register.$invalid">Create a new account</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class=" full-width">
+    <div class="register-container m-b-10 clearfix">
+      
+    </div>
+</div>
+
+<div class="modal fade slide-up disable-scroll" id="helpModal" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <div class="modal-body text-center m-t-20">
+                    <h4 class="no-margin p-b-10">Please feel free to contact us in the below toll free number</h4>
+                    <h3>800-040-291-856-34-2</h3>
+                    <button type="button" class="btn btn-primary btn-cons" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+
+<!-- END OVERLAY -->

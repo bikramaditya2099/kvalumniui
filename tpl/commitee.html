@@ -1,0 +1,51 @@
+
+
+		<div class="body">
+					<div role="main" class="main">
+
+				<section class="page-header">
+					<div class="container">
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Committee</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="mb-none">Our Committee Members</h2>
+							<!-- <p>Icon Boxes are great to show the content of your website and can be set in different styles.</p> -->
+						</div>
+					</div>
+
+					
+
+					<div class="featured-boxes">
+						<div class="row">
+							<div class="col-md-3 col-sm-6" ng-repeat="item in members">
+								<div class="featured-box featured-box-primary featured-box-effect-1">
+									<div class="box-content">
+										<i class="icon-featured fa fa-user" ng-if="item.image.length<=0"></i>
+										<img src="{{item.image}}" class="icon-featured fa " ng-if="item.image.length>0">
+										<h4 class="text-uppercase">{{item.name}}</h4>
+										<!-- <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>-->
+										<p  class="lnk-primary learn-more">{{item.position}}</p>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+			</div>
+
+	

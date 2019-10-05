@@ -1,0 +1,54 @@
+[
+
+  {
+    "year": "December 2017",
+    "events": [
+      {
+        "date": "12/10/2017",
+        "name": "Executive Body Meeting",
+        "day": "Sunday",
+        "appear": "left"
+      },
+      {
+        "date": "12/24/2017",
+        "name": "Annual Get Together Cum General body meeting",
+        "day": "Sunday",
+        "appear": "right"
+      }
+    ]
+  },
+  {
+    "year": "January 2018",
+    "events": [
+      {
+        "date": "01/10/2018",
+        "name": "Marg-X Session 2",
+        "day": "Wednesday",
+        "appear": "left"
+      },
+      {
+        "date": "01/20/2018",
+        "name": "Executive Body meeting",
+        "day": "Saturday",
+        "appear": "right"
+      }
+    ]
+  },
+  {
+    "year": "April 2018",
+    "events": [
+      {
+        "date": "04/08/2018",
+        "name": "Executive Body Meeting",
+        "day": "Sunday",
+        "appear": "left"
+      },
+      {
+        "date": "04/15/2018",
+        "name": "Marg X Session -3",
+        "day": "Sunday",
+        "appear": "right"
+      }
+    ]
+  }
+]

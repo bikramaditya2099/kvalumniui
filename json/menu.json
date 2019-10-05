@@ -1,0 +1,22 @@
+[
+{
+"name":"Home",
+"path":"#/home",
+"submenu":[]
+},
+{
+"name":"Calender",
+"path":"#/calender",
+"submenu":[]
+},
+{
+"name":"Gallery",
+"path":"#/gallery",
+"submenu":[]
+},
+{
+"name":"Goin' Back",
+"path":"#/home",
+"submenu":[]
+}
+]

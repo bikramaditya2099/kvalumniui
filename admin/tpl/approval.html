@@ -1,0 +1,192 @@
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg">
+    
+    <!-- END BREADCRUMB -->
+    <!-- START PANEL -->
+    <div class="panel panel-transparent">
+        
+        <div class="panel-body">
+            <div class="col-md-4 ">
+                <div class="widget-8 panel no-border bg-success no-margin widget-loader-bar" pg-portlet progress="bar" on-refresh="refreshTest('.widget-8')">
+                        <div class="container-xs-height full-height">
+                            <div class="row-xs-height">
+                                <div class="col-xs-height col-top">
+                                    <div class="panel-heading top-left top-right">
+                                        <div class="panel-title text-black hint-text">
+                                            <span class="font-montserrat fs-11 all-caps"> Alumni Registered 
+                                                    </span>
+                                        </div>
+                                        <div class="panel-controls">
+                                            <ul>
+                                                <li>
+                                                    <a data-toggle="refresh" class="portlet-refresh text-black" ng-click="refresh()"><i class="portlet-icon portlet-icon-refresh"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-xs-height ">
+                                <div class="col-xs-height col-top relative">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="p-l-20">
+                                                <h3 class="no-margin p-b-5 text-white">{{pendingUserCount+activeUserCount}}</h3>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                        </div>
+                                    </div>
+                                    <nvd3 options='widget_8_options' class="widget-8-chart line-chart" data='widget_8_data' data-line-color="black" data-points="true" data-point-color="success" data-stroke-width="2"></nvd3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="widget-8 panel no-border bg-success no-margin widget-loader-bar" pg-portlet progress="bar" on-refresh="refreshTest('.widget-8')">
+                        <div class="container-xs-height full-height">
+                            <div class="row-xs-height">
+                                <div class="col-xs-height col-top">
+                                    <div class="panel-heading top-left top-right">
+                                        <div class="panel-title text-black hint-text">
+                                            <span class="font-montserrat fs-11 all-caps">Pending Approvals <i class="fa fa-chevron-right"></i>
+                                                    </span>
+                                        </div>
+                                        <div class="panel-controls">
+                                            <ul>
+                                                <li>
+                                                    <a data-toggle="refresh" class="portlet-refresh text-black" ng-click="refresh()"><i class="portlet-icon portlet-icon-refresh"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-xs-height ">
+                                <div class="col-xs-height col-top relative">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="p-l-20">
+                                                <h3 class="no-margin p-b-5 text-white">{{pendingUserCount}}</h3>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                        </div>
+                                    </div>
+                                    <nvd3 options='widget_8_options' class="widget-8-chart line-chart" data='widget_8_data' data-line-color="black" data-points="true" data-point-color="success" data-stroke-width="2"></nvd3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="widget-8 panel no-border bg-success no-margin widget-loader-bar" pg-portlet progress="bar" on-refresh="refreshTest('.widget-8')">
+                        <div class="container-xs-height full-height">
+                            <div class="row-xs-height">
+                                <div class="col-xs-height col-top">
+                                    <div class="panel-heading top-left top-right">
+                                        <div class="panel-title text-black hint-text">
+                                            <span class="font-montserrat fs-11 all-caps">Approved Alumni <i class="fa fa-chevron-right"></i>
+                                                    </span>
+                                        </div>
+                                        <div class="panel-controls">
+                                            <ul>
+                                                <li>
+                                                    <a data-toggle="refresh" class="portlet-refresh text-black" ng-click="refresh()"><i class="portlet-icon portlet-icon-refresh"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-xs-height ">
+                                <div class="col-xs-height col-top relative">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="p-l-20">
+                                                <h3 class="no-margin p-b-5 text-white">{{activeUserCount}}</h3>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                        </div>
+                                    </div>
+                                    <nvd3 options='widget_8_options' class="widget-8-chart line-chart" data='widget_8_data' data-line-color="black" data-points="true" data-point-color="success" data-stroke-width="2"></nvd3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+                </div>
+                
+                
+                    <div class="panel panel-transparent" >
+        <div class="panel-heading">
+            <p>List of Pending Alumni</p>
+            <div class="btn-group pull-right m-b-10">
+                
+               
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="">Settings</a>
+                    </li>
+                    <li><a href="">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-hover" id="basicTable" >
+                    <thead>
+                        <tr>
+                            <!-- NOTE * : Inline Style Width For Table Cell is Required as it may differ from user to user 
+                                        Comman Practice Followed
+                                        -->
+                          <th style="width:15%">Image</th>
+                            <th style="width:20%">Name</th>
+                            <th style="width:20%">Email</th>
+                            <th style="width:29%">Gender</th>
+                            <th style="width:15%">Passout</th>
+                            <th style="width:15%">Phone</th>
+                            <th style="width:15%">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in pendingUsers">
+                          <td class="v-align-middle" >
+                                <p><img src="http://ec2-54-212-201-118.us-west-2.compute.amazonaws.com:8080/AlumniProject/img/profile_pics/{{item.image}}" style="height: 50px;border-radius: 50px;width:50px;"></p>
+                            </td>
+                            <td class="v-align-middle ">
+                                <p>{{item.firstName}} {{item.lastName}}</p>
+                            </td>
+                            <td class="v-align-middle">
+                                <p>{{item.userEmail}}</p>
+                            </td>
+                            <td class="v-align-middle">
+                                <p>{{item.gender}}</p>
+                            </td>
+                            <td class="v-align-middle">
+                                <p>{{item.passoutYear}}</p>
+                            </td>
+                            <td class="v-align-middle">
+                                <p>{{item.phone}}</p>
+                            </td>
+                             <td class="v-align-middle">
+                                <button class="btn btn-primary btn-cons" ng-click="approve(item)">Approve</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+            </div>
+     
+</div>
+<!-- END CONTAINER FLUID -->
