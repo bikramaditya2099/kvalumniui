@@ -5,7 +5,6 @@ deployment:
     - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R admin $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R cgi=bin $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R json $DEPLOYPATH
     - /bin/cp -R master $DEPLOYPATH
